@@ -1,0 +1,149 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.landing-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.logo h1 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin: 0;
+}
+
+.main-nav .btn {
+    margin-left: 10px;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.btn-login {
+    color: #2c3e50;
+    border: 1px solid #2c3e50;
+}
+
+.btn-register {
+    background-color: #3498db;
+    color: white;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 80px 0;
+    background-color: white;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content h2 {
+    color: #2c3e50;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-cta .btn {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: white;
+    color: #3498db;
+    border: 1px solid #3498db;
+}
+
+.features-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+.feature {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    margin: 0 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.announcements-section, .support-section {
+    background-color: white;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.announcements-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.announcement-card {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.support-section .support-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.support-section a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+}
+
+.main-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+@media screen and (max-width: 768px) {
+    .features-section, .announcements-grid {
+        flex-direction: column;
+        grid-template-columns: 1fr;
+    }
+
+    .feature, .announcement-card {
+        margin: 10px 0;
+    }
+}

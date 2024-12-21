@@ -1,0 +1,107 @@
+/* 整體頁面樣式 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* 錯誤訊息樣式 */
+.error {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* 表單樣式 */
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    width: 70%;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+select {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* 表格樣式 */
+table.worker-list {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table.worker-list th, table.worker-list td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table.worker-list th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+table.worker-list tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    input[type="text"] {
+        width: 60%;
+    }
+
+    button, select {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    table.worker-list {
+        font-size: 14px;
+    }
+
+    table.worker-list th, table.worker-list td {
+        padding: 8px;
+    }
+}

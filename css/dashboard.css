@@ -1,0 +1,126 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.intro-section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.announcements-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.support-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    grid-column: 1 / -1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.stats-card {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.stats-card div {
+    text-align: center;
+    flex: 1;
+}
+
+.stats-card div h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.stats-card div p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3498db;
+}
+
+.announcement-item {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 15px 0;
+    transition: background-color 0.3s ease;
+}
+
+.announcement-item:hover {
+    background-color: #f9f9f9;
+}
+
+.announcement-item:last-child {
+    border-bottom: none;
+}
+
+.announcement-item strong {
+    color: #2c3e50;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.announcement-item p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.announcement-item small {
+    color: #999;
+    font-size: 0.8em;
+}
+
+.support-section h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.support-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.support-links h3 {
+    margin: 0;
+    text-align: center;
+}
+
+.support-links a {
+    text-decoration: none;
+    color: #3498db;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.support-links a:hover {
+    color: #2980b9;
+}

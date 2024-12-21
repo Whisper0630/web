@@ -1,0 +1,136 @@
+/* Overall container style */
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Heading style */
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Error and success message styles */
+.error-message, .success-message {
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+/* Search and filter form styles */
+.search-form, .filter-form, .sort-form {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.search-form input,
+.filter-form select,
+.sort-form select {
+    padding: 8px;
+    margin-right: 10px;
+}
+
+.search-form button,
+.filter-form button,
+.sort-form button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.search-form button:hover,
+.filter-form button:hover,
+.sort-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Table styles */
+.case-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.case-table th, .case-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.case-table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+/* Basic info tooltips */
+.basic-info {
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.basic-info:hover {
+    background-color: #f1f1f1;
+}
+
+/* Button styles */
+.btn {
+    padding: 6px 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
+
+.btn:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+/* Pagination styles */
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    padding: 8px 12px;
+    margin: 0 5px;
+    text-decoration: none;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+}
+
+.pagination a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.pagination .current {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
